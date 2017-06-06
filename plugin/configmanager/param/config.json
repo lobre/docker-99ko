@@ -1,0 +1,5 @@
+{
+    "priority" : "2",
+    "adminTabs" : "General configuration,User account,Advanced configuration",
+    "protected" : "1"
+}

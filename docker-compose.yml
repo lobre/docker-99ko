@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  app:
+    build: "."
+    container_name: gpw-iut
+    volumes:
+      - data:/var/www/html/data
+      - ./plugin:/var/www/html/plugin
+      - ./theme:/var/www/html/theme
+    ports:
+      - 8080:80
+
+volumes:
+  data:
+    driver: "local"
